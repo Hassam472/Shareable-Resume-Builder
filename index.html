@@ -1,0 +1,54 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shareable Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Shareable Resume Builder By Hassam</h1>
+    
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <h2>Education</h2>
+      <label for="education">Degree:</label>
+      <input type="text" id="education" name="education" required>
+      
+      <label for="school">School:</label>
+      <input type="text" id="school" name="school" required>
+      
+      <h2>Work Experience</h2>
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" id="jobTitle" name="jobTitle" required>
+      
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" required>
+
+      <h2>Skills</h2>
+      <label for="skills">Skills (comma separated):</label>
+      <input type="text" id="skills" name="skills" required>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+<br>
+    <div id="resume">
+      <div id="resumeContent"></div>
+    </div>
+  </div>
+  
+  <script type="module" src="index.js"></script>
+</body>
+</html>
